@@ -57,9 +57,19 @@
         .results {
             text-align: center;
         }
-        .co2-text {
+        .co2-text-red {
             color: red;
-            font-size: 21px;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .co2-text-yellow {
+            color: #FFD700;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .co2-text-green {
+            color: green;
+            font-size: 24px;
             margin: 20px 0;
         }
     </style>
@@ -75,9 +85,9 @@
         <h3 class="subtitle">Your plate's results</h3>
         <div class="results-container">
             <div class="results">
-                <h3>{{ probability_text }}</h3>
+                <h3 class="{{ 'co2-text-green' if 'GOOD! You are eating local.' in probability_text else '' }}">{{ probability_text }}</h3>
                 {% if co2_text %}
-                    <h2 class="co2-text">{{ co2_text }}</h2>
+                    <h2 class="{{ co2_class }}">{{ co2_text }}</h2>
                 {% endif %}
             </div>
         </div>

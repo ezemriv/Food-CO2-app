@@ -85,13 +85,22 @@ def result():
         
         sources_text = sources_text.upper()
         probability_text = f"With a probability of {summed_probability*100:.2f}%, your food is coming from {sources_text}."
-        co2_text = f"That generates approximately {mean_co2 / 1e6:.2f} million kg of CO2!!"
+        
+        co2_amount = mean_co2 / 1e6
+        if co2_amount < 1:
+            co2_text = f"Generating approximately {co2_amount:.2f} million Kg of CO2, which is not that bad!"
+            co2_class = "co2-text-yellow"
+        else:
+            co2_text = f"That generates approximately {co2_amount:.2f} million Kg of CO2!!"
+            co2_class = "co2-text-red"
     else:
         probability_text = "GOOD! You are eating local."
         co2_text = ""
+        co2_class = "co2-text-green"
 
     # Render the result template with the results
-    return render_template('result.html', probability_text=probability_text, co2_text=co2_text)
+    return render_template('result.html', probability_text=probability_text, co2_text=co2_text, co2_class=co2_class)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=5000, debug=True)
