@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import pyarrow as pa
 import fastparquet as fp
+import json
 import os
 
 app = Flask(__name__)
@@ -52,7 +53,9 @@ def find_top_sources(df, country_target, item):
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    with open('./data/food_items.json', 'r') as f:
+        food_items = json.load(f)['food_items']
+    return render_template('home.html', food_items=food_items)
 
 @app.route('/result', methods=['POST'])
 def result():

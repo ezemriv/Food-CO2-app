@@ -1,0 +1,404 @@
+{
+    "food_items": [
+        {
+            "value": "bananas",
+            "label": "Bananas"
+        },
+        {
+            "value": "soya beans",
+            "label": "Soya Beans"
+        },
+        {
+            "value": "cassava; dry",
+            "label": "Cassava; Dry"
+        },
+        {
+            "value": "tomatoes",
+            "label": "Tomatoes"
+        },
+        {
+            "value": "palm oil",
+            "label": "Palm Oil"
+        },
+        {
+            "value": "wheat",
+            "label": "Wheat"
+        },
+        {
+            "value": "oranges",
+            "label": "Oranges"
+        },
+        {
+            "value": "plantains and cooking bananas",
+            "label": "Plantains And Cooking Bananas"
+        },
+        {
+            "value": "grapes",
+            "label": "Grapes"
+        },
+        {
+            "value": "pineapples",
+            "label": "Pineapples"
+        },
+        {
+            "value": "maize (corn)",
+            "label": "Maize (Corn)"
+        },
+        {
+            "value": "beer of barley; malted",
+            "label": "Beer Of Barley; Malted"
+        },
+        {
+            "value": "avocados",
+            "label": "Avocados"
+        },
+        {
+            "value": "chillies and peppers; green (capsicum spp. and pimenta spp.)",
+            "label": "Chillies And Peppers; Green (Capsicum Spp. And Pimenta Spp.)"
+        },
+        {
+            "value": "other tropical fruits; n.e.c.",
+            "label": "Other Tropical Fruits; N.E.C."
+        },
+        {
+            "value": "tangerines; mandarins; clementines",
+            "label": "Tangerines; Mandarins; Clementines"
+        },
+        {
+            "value": "starch of cassava",
+            "label": "Starch Of Cassava"
+        },
+        {
+            "value": "cucumbers and gherkins",
+            "label": "Cucumbers And Gherkins"
+        },
+        {
+            "value": "meat of chickens; fresh or chilled",
+            "label": "Meat Of Chickens; Fresh Or Chilled"
+        },
+        {
+            "value": "mangoes; guavas and mangosteens",
+            "label": "Mangoes; Guavas And Mangosteens"
+        },
+        {
+            "value": "lemons and limes",
+            "label": "Lemons And Limes"
+        },
+        {
+            "value": "pomelos and grapefruits",
+            "label": "Pomelos And Grapefruits"
+        },
+        {
+            "value": "watermelons",
+            "label": "Watermelons"
+        },
+        {
+            "value": "meat of pig with the bone; fresh or chilled",
+            "label": "Meat Of Pig With The Bone; Fresh Or Chilled"
+        },
+        {
+            "value": "cheese from whole cow milk",
+            "label": "Cheese From Whole Cow Milk"
+        },
+        {
+            "value": "cake of soya beans",
+            "label": "Cake Of Soya Beans"
+        },
+        {
+            "value": "other fruits; n.e.c.",
+            "label": "Other Fruits; N.E.C."
+        },
+        {
+            "value": "juice of pineapples; concentrated",
+            "label": "Juice Of Pineapples; Concentrated"
+        },
+        {
+            "value": "pineapple juice",
+            "label": "Pineapple Juice"
+        },
+        {
+            "value": "rice; broken",
+            "label": "Rice; Broken"
+        },
+        {
+            "value": "raw cane or beet sugar (centrifugal only)",
+            "label": "Raw Cane Or Beet Sugar (Centrifugal Only)"
+        },
+        {
+            "value": "pumpkins; squash and gourds",
+            "label": "Pumpkins; Squash And Gourds"
+        },
+        {
+            "value": "sorghum",
+            "label": "Sorghum"
+        },
+        {
+            "value": "blueberries",
+            "label": "Blueberries"
+        },
+        {
+            "value": "cabbages",
+            "label": "Cabbages"
+        },
+        {
+            "value": "onions and shallots; dry (excluding dehydrated)",
+            "label": "Onions And Shallots; Dry (Excluding Dehydrated)"
+        },
+        {
+            "value": "barley",
+            "label": "Barley"
+        },
+        {
+            "value": "asparagus",
+            "label": "Asparagus"
+        },
+        {
+            "value": "lettuce and chicory",
+            "label": "Lettuce And Chicory"
+        },
+        {
+            "value": "vegetables frozen",
+            "label": "Vegetables Frozen"
+        },
+        {
+            "value": "rice; milled",
+            "label": "Rice; Milled"
+        },
+        {
+            "value": "cranberries",
+            "label": "Cranberries"
+        },
+        {
+            "value": "cake of palm kernel",
+            "label": "Cake Of Palm Kernel"
+        },
+        {
+            "value": "cake of rapeseed",
+            "label": "Cake Of Rapeseed"
+        },
+        {
+            "value": "pastry",
+            "label": "Pastry"
+        },
+        {
+            "value": "other vegetables; fresh n.e.c.",
+            "label": "Other Vegetables; Fresh N.E.C."
+        },
+        {
+            "value": "cantaloupes and other melons",
+            "label": "Cantaloupes And Other Melons"
+        },
+        {
+            "value": "other fructose and syrup",
+            "label": "Other Fructose And Syrup"
+        },
+        {
+            "value": "rice",
+            "label": "Rice"
+        },
+        {
+            "value": "carrots and turnips",
+            "label": "Carrots And Turnips"
+        },
+        {
+            "value": "other berries and fruits of the genus vaccinium n.e.c.",
+            "label": "Other Berries And Fruits Of The Genus Vaccinium N.E.C."
+        },
+        {
+            "value": "rapeseed or canola oil; crude",
+            "label": "Rapeseed Or Canola Oil; Crude"
+        },
+        {
+            "value": "sunflower-seed oil; crude",
+            "label": "Sunflower-Seed Oil; Crude"
+        },
+        {
+            "value": "potatoes; frozen",
+            "label": "Potatoes; Frozen"
+        },
+        {
+            "value": "other non-alcoholic caloric beverages",
+            "label": "Other Non-Alcoholic Caloric Beverages"
+        },
+        {
+            "value": "potatoes",
+            "label": "Potatoes"
+        },
+        {
+            "value": "strawberries",
+            "label": "Strawberries"
+        },
+        {
+            "value": "raspberries",
+            "label": "Raspberries"
+        },
+        {
+            "value": "soya bean oil",
+            "label": "Soya Bean Oil"
+        },
+        {
+            "value": "bran of wheat",
+            "label": "Bran Of Wheat"
+        },
+        {
+            "value": "sugar and syrups n.e.c.",
+            "label": "Sugar And Syrups N.E.C."
+        },
+        {
+            "value": "green garlic",
+            "label": "Green Garlic"
+        },
+        {
+            "value": "meat of cattle boneless; fresh or chilled",
+            "label": "Meat Of Cattle Boneless; Fresh Or Chilled"
+        },
+        {
+            "value": "refined sugar",
+            "label": "Refined Sugar"
+        },
+        {
+            "value": "apples",
+            "label": "Apples"
+        },
+        {
+            "value": "papayas",
+            "label": "Papayas"
+        },
+        {
+            "value": "rape or colza seed",
+            "label": "Rape Or Colza Seed"
+        },
+        {
+            "value": "oil of castor beans",
+            "label": "Oil Of Castor Beans"
+        },
+        {
+            "value": "fruit prepared n.e.c.",
+            "label": "Fruit Prepared N.E.C."
+        },
+        {
+            "value": "meat of turkeys; fresh or chilled",
+            "label": "Meat Of Turkeys; Fresh Or Chilled"
+        },
+        {
+            "value": "malt; whether or not roasted",
+            "label": "Malt; Whether Or Not Roasted"
+        },
+        {
+            "value": "cake; oilseeds nes",
+            "label": "Cake; Oilseeds Nes"
+        },
+        {
+            "value": "orange juice; concentrated",
+            "label": "Orange Juice; Concentrated"
+        },
+        {
+            "value": "cashew nuts; in shell",
+            "label": "Cashew Nuts; In Shell"
+        },
+        {
+            "value": "linseed",
+            "label": "Linseed"
+        },
+        {
+            "value": "edible offal of pigs; fresh; chilled or frozen",
+            "label": "Edible Offal Of Pigs; Fresh; Chilled Or Frozen"
+        },
+        {
+            "value": "molasses",
+            "label": "Molasses"
+        },
+        {
+            "value": "beans; dry",
+            "label": "Beans; Dry"
+        },
+        {
+            "value": "coconuts; in shell",
+            "label": "Coconuts; In Shell"
+        },
+        {
+            "value": "peas; dry",
+            "label": "Peas; Dry"
+        },
+        {
+            "value": "sugar confectionery",
+            "label": "Sugar Confectionery"
+        },
+        {
+            "value": "bran of cereals n.e.c.",
+            "label": "Bran Of Cereals N.E.C."
+        },
+        {
+            "value": "industrial monocarboxylic fatty acids; acid oils from refining",
+            "label": "Industrial Monocarboxylic Fatty Acids; Acid Oils From Refining"
+        },
+        {
+            "value": "oats",
+            "label": "Oats"
+        },
+        {
+            "value": "peaches and nectarines",
+            "label": "Peaches And Nectarines"
+        },
+        {
+            "value": "yoghurt",
+            "label": "Yoghurt"
+        },
+        {
+            "value": "food preparations n.e.c.",
+            "label": "Food Preparations N.E.C."
+        },
+        {
+            "value": "raw milk of cattle",
+            "label": "Raw Milk Of Cattle"
+        },
+        {
+            "value": "wine",
+            "label": "Wine"
+        },
+        {
+            "value": "meat of cattle with the bone; fresh or chilled",
+            "label": "Meat Of Cattle With The Bone; Fresh Or Chilled"
+        },
+        {
+            "value": "cake of sunflower seed",
+            "label": "Cake Of Sunflower Seed"
+        },
+        {
+            "value": "cattle",
+            "label": "Cattle"
+        },
+        {
+            "value": "undenatured ethyl alcohol of an alcoholic strength by volume of less than 80% vol; spirits; liqueurs and other spirituous beverages",
+            "label": "Undenatured Ethyl Alcohol Of An Alcoholic Strength By Volume Of Less Than 80% Vol; Spirits; Liqueurs And Other Spirituous Beverages"
+        },
+        {
+            "value": "dates",
+            "label": "Dates"
+        },
+        {
+            "value": "oil of palm kernel",
+            "label": "Oil Of Palm Kernel"
+        },
+        {
+            "value": "green corn (maize)",
+            "label": "Green Corn (Maize)"
+        },
+        {
+            "value": "cauliflowers and broccoli",
+            "label": "Cauliflowers And Broccoli"
+        },
+        {
+            "value": "flour of maize",
+            "label": "Flour Of Maize"
+        },
+        {
+            "value": "wheat and meslin flour",
+            "label": "Wheat And Meslin Flour"
+        },
+        {
+            "value": "tomatoes; peeled (o/t vinegar)",
+            "label": "Tomatoes; Peeled (O/T Vinegar)"
+        }
+    ]
+}

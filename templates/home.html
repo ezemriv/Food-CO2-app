@@ -78,9 +78,9 @@
 			<div class="form-group">
 				<label for="food">What's on your plate?</label>
 				<select id="food" name="food">
-					<option value="bananas">Bananas</option>
-					<option value="soya beans">Soya Beans</option>
-					<option value="asparagus">Asparagus</option>
+					{% for item in food_items %}
+						<option value="{{ item.value }}">{{ item.label }}</option>
+					{% endfor %}
 				</select>
 			</div>
 			<input type="submit" class="button" value="Analyze">
