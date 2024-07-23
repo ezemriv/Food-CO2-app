@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash, redirect, url_for
 import pandas as pd
 import numpy as np
 import pyarrow as pa
@@ -70,6 +70,12 @@ def result():
     else:
         # Handle the case where the file does not exist
         return "Data file not found.", 404
+    
+    # Check if the provided location is in the dataset
+    valid_countries = df['Country_target'].str.lower().unique()
+    if country_target.lower() not in valid_countries:
+        flash('Invalid country provided. Please enter a valid country name.', 'ERROR 404404')
+        return redirect(url_for('home'))
 
     # Call the function with the provided inputs
     top_sources, summed_probability, mean_co2 = find_top_sources(df, country_target, item)
