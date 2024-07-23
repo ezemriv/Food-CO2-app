@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Food Analyzer Result</title>
+    <style>
+        .logo {
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .grid{
+            display: flex;
+        }
+        .header-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .ml-container{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+        }
+        .title{
+            color: #FCB700;
+            margin-bottom: -5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .button{
+            color: white;
+            background: black;
+            font-size: 20px;
+            border-radius: 10px;
+            height: 40px;
+            width: 100px;
+        }
+        .image{
+            height: 300px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brandname">
+                <h2 class="title" align="center">Local Food Analyzer Result</h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="ml-container">
+        <div class="results" align="center">
+            <h3>{{ probability_text }}</h3>
+            {% if co2_text %}
+                <p>{{ co2_text }}</p>
+            {% endif %}
+            <a href="/">
+                <input class="button" type="submit" value="Back">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
