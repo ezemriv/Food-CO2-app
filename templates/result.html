@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Local Food Analyzer Result</title>
+    <title>FAO-Powered Foodprint Calculator Results</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
         .logo {
-            width: 100px;
-            margin-left: 20px;
+            width: 150px;
+            margin: 0 10px;
+        }
+        .ml-container {
+            text-align: center;
             margin-top: 20px;
         }
-        .grid{
-            display: flex;
+        .title {
+            color: #1f1687;
+            font-size: 28px;
+            margin-bottom: 10px;
         }
-        .header-container{
-            display: flex;
-            flex-direction: column;
-        }
-        .ml-container{
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 50px;
-        }
-        .title{
-            color: #FCB700;
-            margin-bottom: -5px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .button{
-            color: white;
-            background: black;
+        .subtitle {
             font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            color: rgb(0, 0, 0);
+            background: rgb(80, 150, 194);
+            font-size: 16px;
             border-radius: 10px;
             height: 40px;
             width: 100px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            border: none;
+            margin-top: 20px;
         }
-        .image{
-            height: 300px
+        .button:hover {
+            background-color: rgb(60, 130, 174);
+            transform: scale(1.05);
+        }
+        .results-container {
+            display: block;
+            background-color: #c9c2c2;
+            border-radius: 0px;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        .results {
+            text-align: center;
+        }
+        .co2-text {
+            color: red;
+            font-size: 21px;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="brandname">
-                <h2 class="title" align="center">Local Food Analyzer Result</h2>
-            </div>
-        </div>
+        <img class="logo" src='https://www.fao.org/fileadmin/templates/family-farming-decade/images/FAO-IFAD-Logos/FAO-Logo-EN.svg' alt="FAO Logo"> 	
+        <img class="logo" src='https://dla-tech.com/wp-content/uploads/2022/03/logo-NDS-A-positivo.png' alt="NDS Logo">	
     </header>
 
     <div class="ml-container">
-        <div class="results" align="center">
-            <h3>{{ probability_text }}</h3>
-            {% if co2_text %}
-                <p>{{ co2_text }}</p>
-            {% endif %}
-            <a href="/">
-                <input class="button" type="submit" value="Back">
-            </a>
+        <h2 class="title">FAO-Powered Foodprint Calculator</h2>
+        <h3 class="subtitle">Your plate's results</h3>
+        <div class="results-container">
+            <div class="results">
+                <h3>{{ probability_text }}</h3>
+                {% if co2_text %}
+                    <h2 class="co2-text">{{ co2_text }}</h2>
+                {% endif %}
+            </div>
         </div>
+        <a href="/">
+            <button class="button">Back</button>
+        </a>
     </div>
 </body>
 </html>

@@ -3,36 +3,48 @@
 <head>
 	<title>Home</title>
 	<style>
-		.logo {
-			width: 100px;
-			margin-left: 20px;
-			margin-top: 20px;
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+			padding: 0;
 		}
-		.grid {
+		header {
 			display: flex;
-		}
-		.header-container {
-			display: flex;
-			flex-direction: column;
+			justify-content: center;
 			align-items: center;
+			padding: 20px 0;
+		}
+		.logo {
+			width: 200px;
+			margin: 0 10px;
 		}
 		.ml-container {
-			font-family: Arial, Helvetica, sans-serif;
 			text-align: center;
 			margin-top: 20px;
 		}
 		.title {
-			color: #FCB700;
-			margin-bottom: -5px;
+			color: #1756ba;
+			font-size: 28px;
+			margin-bottom: 10px;
+		}
+		.subtitle {
+			font-size: 20px;
+			margin-bottom: 20px;
 		}
 		.button {
-			color: white;
-			background: black;
-			font-size: 20px;
+			color: rgb(0, 0, 0);
+			background: rgb(80, 150, 194);
+			font-size: 16px;
 			border-radius: 10px;
 			height: 40px;
 			width: 100px;
 			cursor: pointer;
+			transition: background-color 0.3s, transform 0.1s;
+		}
+
+		.button:hover {
+			background-color: #1756ba;
+			transform: scale(1.05);
 		}
 		.form-group {
 			margin-bottom: 20px;
@@ -51,30 +63,27 @@
 <body>
 
 	<header>
-		<div class="grid">
-			<img class="logo" src='https://nuclio.school/wp-content/uploads/2019/10/logo-nuclio-2019.png'>	
-		</div>	
+		<img class="logo" src='https://www.fao.org/fileadmin/templates/family-farming-decade/images/FAO-IFAD-Logos/FAO-Logo-EN.svg' alt="FAO Logo"> 	
+		<img class="logo" src='https://dla-tech.com/wp-content/uploads/2022/03/logo-NDS-A-positivo.png' alt="NDS Logo">	
 	</header>
 
 	<div class="ml-container">
-		<div class="header-container">
-			<h2 class="title">Sentiment Analysis Application Containerization using Docker</h2>
-		   	<h3>Twitter Sentiment Analysis</h3>
-		</div>
+		<h2 class="title">FAO-Powered Foodprint Calculator</h2>
+		<h3 class="subtitle">Explore the global journey and environmental cost of what you eat</h3>
 		<form action="{{ url_for('result')}}" method="POST">
 			<div class="form-group">
-				<label for="location">¿Dónde te encuentras?</label>
-				<input type="text" id="location" name="location" placeholder="Ingresa tu país"/>
+				<label for="location">Tell us your location.</label>
+				<input type="text" id="location" name="location" placeholder="Country"/>
 			</div>
 			<div class="form-group">
-				<label for="food">¿Qué vas a comer?</label>
+				<label for="food">What's on your plate?</label>
 				<select id="food" name="food">
 					<option value="bananas">Bananas</option>
 					<option value="soya beans">Soya Beans</option>
 					<option value="asparagus">Asparagus</option>
 				</select>
 			</div>
-			<input type="submit" class="button" value="Enviar">
+			<input type="submit" class="button" value="Analyze">
 		</form>
 	</div>
 
