@@ -96,16 +96,21 @@ def result():
         if co2_amount < 1:
             co2_text = f"Generating approximately {co2_amount:.2f} million Kg of CO2, which is not that bad!"
             co2_class = "co2-text-yellow"
+            image_file = "dicaprio.gif"
         else:
             co2_text = f"That generates approximately {co2_amount:.2f} million Kg of CO2!!"
             co2_class = "co2-text-red"
+            image_file = "trump_bad.jpg"
+
     else:
         probability_text = "GOOD! You are eating local."
         co2_text = ""
         co2_class = "co2-text-green"
+        image_file = "greta_good.jpg"
+
 
     # Render the result template with the results
-    return render_template('result.html', probability_text=probability_text, co2_text=co2_text, co2_class=co2_class)
+    return render_template('result.html', probability_text=probability_text, co2_text=co2_text, co2_class=co2_class, image_file=image_file)
 
 
 if __name__ == '__main__':
