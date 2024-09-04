@@ -3,82 +3,100 @@
 <head>
     <title>Foodprint Calculator Results</title>
     <style>
+        :root {
+            --scale-factor: 1.5; /* Define your multiplier here */
+        }
+    
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
+            font-size: calc(16px * var(--scale-factor));
         }
+    
         header {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px 0;
+            padding: calc(20px * var(--scale-factor)) 0;
         }
+    
         .logo {
-            width: 150px;
-            margin: 0 10px;
+            width: calc(150px * var(--scale-factor));
+            margin: 0 calc(10px * var(--scale-factor));
         }
+    
         .ml-container {
             text-align: center;
-            margin-top: 20px;
+            margin-top: calc(20px * var(--scale-factor));
         }
+    
         .title {
             color: #1f1687;
-            font-size: 28px;
-            margin-bottom: 10px;
+            font-size: calc(28px * var(--scale-factor));
+            margin-bottom: calc(10px * var(--scale-factor));
         }
+    
         .subtitle {
-            font-size: 20px;
-            margin-bottom: 20px;
+            font-size: calc(20px * var(--scale-factor));
+            margin-bottom: calc(20px * var(--scale-factor));
         }
+    
         .button {
             color: rgb(0, 0, 0);
             background: rgb(80, 150, 194);
-            font-size: 16px;
-            border-radius: 10px;
-            height: 40px;
-            width: 100px;
+            font-size: calc(16px * var(--scale-factor));
+            border-radius: calc(10px * var(--scale-factor));
+            height: calc(40px * var(--scale-factor));
+            width: calc(100px * var(--scale-factor));
             cursor: pointer;
             transition: background-color 0.3s, transform 0.1s;
             border: none;
-            margin-top: 20px;
+            margin-top: calc(20px * var(--scale-factor));
         }
+    
         .button:hover {
             background-color: rgb(60, 130, 174);
             transform: scale(1.05);
         }
+    
         .results-container {
             display: block;
             background-color: #c9c2c2;
             border-radius: 0px;
-            padding: 10px;
-            margin-top: 30px;
+            padding: calc(10px * var(--scale-factor));
+            margin-top: calc(30px * var(--scale-factor));
         }
+    
         .results {
             text-align: center;
         }
+    
         .co2-text-red {
             color: red;
-            font-size: 24px;
-            margin: 20px 0;
+            font-size: calc(24px * var(--scale-factor));
+            margin: calc(20px * var(--scale-factor)) 0;
         }
+    
         .co2-text-yellow {
             color: #ffe23c;
-            font-size: 24px;
-            margin: 20px 0;
+            font-size: calc(24px * var(--scale-factor));
+            margin: calc(20px * var(--scale-factor)) 0;
         }
+    
         .co2-text-green {
             color: green;
-            font-size: 24px;
-            margin: 20px 0;
+            font-size: calc(24px * var(--scale-factor));
+            margin: calc(20px * var(--scale-factor)) 0;
         }
+    
         .result-image {
-            width: 300px;
+            width: calc(300px * var(--scale-factor));
             height: auto;
-            margin: 10px auto;
+            margin: calc(10px * var(--scale-factor)) auto;
             display: block;
         }
-    </style>
+    </style>    
 </head>
 <body>
     <header>

@@ -3,41 +3,52 @@
 <head>
 	<title>FAO-Powered Foodprint Calculator</title>
 	<style>
+		:root {
+			--scale-factor: 1.5; /* Define your multiplier here */
+		}
+
 		body {
 			font-family: Arial, Helvetica, sans-serif;
 			margin: 0;
 			padding: 0;
+			font-size: calc(16px * var(--scale-factor));
 		}
+
 		header {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding: 20px 0;
+			padding: calc(20px * var(--scale-factor)) 0;
 		}
+
 		.logo {
-			width: 200px;
-			margin: 0 10px;
+			width: calc(200px * var(--scale-factor));
+			margin: 0 calc(10px * var(--scale-factor));
 		}
+
 		.ml-container {
 			text-align: center;
-			margin-top: 20px;
+			margin-top: calc(20px * var(--scale-factor));
 		}
+
 		.title {
 			color: #1756ba;
-			font-size: 28px;
-			margin-bottom: 10px;
+			font-size: calc(28px * var(--scale-factor));
+			margin-bottom: calc(10px * var(--scale-factor));
 		}
+
 		.subtitle {
-			font-size: 20px;
-			margin-bottom: 20px;
+			font-size: calc(20px * var(--scale-factor));
+			margin-bottom: calc(20px * var(--scale-factor));
 		}
+
 		.button {
 			color: rgb(0, 0, 0);
 			background: rgb(80, 150, 194);
-			font-size: 16px;
-			border-radius: 10px;
-			height: 40px;
-			width: 100px;
+			font-size: calc(16px * var(--scale-factor));
+			border-radius: calc(10px * var(--scale-factor));
+			height: calc(40px * var(--scale-factor));
+			width: calc(100px * var(--scale-factor));
 			cursor: pointer;
 			transition: background-color 0.3s, transform 0.1s;
 		}
@@ -46,17 +57,20 @@
 			background-color: #1756ba;
 			transform: scale(1.05);
 		}
+
 		.form-group {
-			margin-bottom: 20px;
+			margin-bottom: calc(20px * var(--scale-factor));
 		}
+
 		.form-group label {
 			display: block;
-			margin-bottom: 5px;
+			margin-bottom: calc(5px * var(--scale-factor));
 		}
+
 		.form-group input, .form-group select {
-			width: 300px;
-			padding: 10px;
-			font-size: 16px;
+			width: calc(300px * var(--scale-factor));
+			padding: calc(10px * var(--scale-factor));
+			font-size: calc(16px * var(--scale-factor));
 		}
 	</style>
 </head>
