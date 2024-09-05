@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/docker-white?logo=docker&logoColor=2496ED" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/flask-white?logo=flask&logoColor=black" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/Python-white?logo=Python" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/render-white?logo=render&logoColor=black" style="height: 25px; width: auto;">
+<img src="https://img.shields.io/badge/docker-white?logo=docker&logoColor=2496ED" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/flask-white?logo=flask&logoColor=black" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/Python-white?logo=Python" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/render-white?logo=render&logoColor=black" style="height: 25px; width: auto;">  <img src="https://img.shields.io/badge/HTML-white?logo=html5&logoColor=orange" style="height: 25px; width: auto;">
 
 
 # Dockerized Flask Web App for Food Origin and Environmental Impact Estimation
